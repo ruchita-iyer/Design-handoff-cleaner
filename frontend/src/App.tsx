@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import { Dashboard } from './pages/Dashboard';
 import { Analysis } from './pages/Analysis';
 
@@ -6,6 +7,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-background text-foreground font-sans antialiased">
+        <Analytics />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/analysis/:fileId" element={<Analysis />} />
