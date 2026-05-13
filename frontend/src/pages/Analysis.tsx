@@ -4,16 +4,11 @@ import {
   ArrowLeft, 
   ShieldAlert, 
   ShieldCheck, 
-  ShieldQuestion, 
   Layers, 
-  Type, 
   Palette, 
   Box,
-  ChevronRight,
   ExternalLink,
-  Search,
-  Loader2,
-  Filter
+  Search
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { useScannerStore } from '../store/scannerStore';
