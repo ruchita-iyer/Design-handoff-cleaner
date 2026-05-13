@@ -8,7 +8,9 @@ import {
   Palette, 
   Box,
   ExternalLink,
-  Search
+  Search,
+  Loader2,
+  Filter
 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { useScannerStore } from '../store/scannerStore';
