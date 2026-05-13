@@ -70,7 +70,7 @@ export const useScannerStore = create<ScannerState>((set) => ({
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/api/figma/scan', { 
+      const response = await axios.post('/api/figma/scan', { 
         fileUrl: url,
         userToken: userToken 
       });
